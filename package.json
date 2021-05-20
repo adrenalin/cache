@@ -1,0 +1,42 @@
+{
+  "name": "cache",
+  "version": "0.20.0",
+  "description": "Memcache",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha --recursive tests/",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adrenalin/cache.git"
+  },
+  "author": "arttu@kaktus.cc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrenalin/cache/issues"
+  },
+  "homepage": "https://github.com/adrenalin/cache#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "helpers.js": "git+https://github.com/adrenalin/helpers.js.git#v0.20.0",
+    "errors": "git+https://github.com/adrenalin/errors",
+    "logger": "git+https://github.com/adrenalin/logger.git#386d03782d46fc7373a3fff11a4c81d4c6d0de3e"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "$",
+      "alert",
+      "describe",
+      "it",
+      "before",
+      "after"
+    ]
+  }
+}
