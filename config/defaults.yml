@@ -4,12 +4,12 @@ server:
 remote:
   protocol: 'http'
   host: 'localhost'
-  port: 3001
+  port: 80
   timeout: 10
 
 cache:
   lifetime: 10
 
 ignoreUrls:
-  - /midcom-.*
   - /cache
+  - /login
