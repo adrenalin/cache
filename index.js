@@ -167,4 +167,4 @@ setInterval(async () => {
       delete pages[id]
     }
   }
-}, 10000)
+}, 60000)
